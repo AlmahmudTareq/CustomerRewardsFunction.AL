@@ -29,7 +29,7 @@ if($UseDocker -eq $true) {
         "Company"       = $Company
         "ObjectType"    = "CodeUnit"
         "ObjectID"      = $CodeUnitNo
-        "ClientPath"    = "C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\190\RoleTailored Client\Microsoft.Dynamics.Nav.Client.exe"
+        "ClientPath"    = "C:\Program Files\Microsoft Dynamics 365 Business Central\190\Service\Microsoft.Dynamics.Nav.Server.exe"
     }
     $ec = Start-B365NAVInConsoleMode @Parameters
 } else {
@@ -39,7 +39,7 @@ if($UseDocker -eq $true) {
         "Company"       = $Company
         "ObjectType"    = "CodeUnit"
         "ObjectID"      = $CodeUnitNo
-        "ClientPath"    = "C:\Program Files (x86)\Microsoft Dynamics 365 Business Central\190\RoleTailored Client\Microsoft.Dynamics.Nav.Client.exe"
+        "ClientPath"    = "C:\Program Files\Microsoft Dynamics 365 Business Central\190\Service\Microsoft.Dynamics.Nav.Server.exe"
     }
     $ec = Start-B365NAVInConsoleMode @Parameters
 }
